@@ -6,7 +6,7 @@ public class CollatzConjecture {
         long m = n;
         while (m >= n){
             if((m&1) == 1) { //ODD
-                m = m*3+1;
+                m = m+m+m+1;
             } else{ //even
                 m = m>>1;
             }
