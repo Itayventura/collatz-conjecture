@@ -37,9 +37,9 @@ public class CollatzConjecture {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        for(long i = 2; i<= 20000000000L; i++){
+        for(long i = 3; i<= 20000000000L; i+=2){
             validateCollatzNumber(i);
-            if((i & 16777215L) == 0) { //print every x numbers
+            if((i & 16777215L) - 1 == 0) { //print every x numbers
                 System.out.println("number: " +  i + " time: " + (System.currentTimeMillis()-startTime));
             }
         }

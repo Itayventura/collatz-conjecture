@@ -20,6 +20,7 @@ instead of stopping at 1, we stop if we reached a number that we had already pro
 
 i.e if we proved that all numbers between 1 <= i <= n are collatz numbers, so in order to prove that n+1 is a collatz number it is enough to show that by sequence of operations we can reach any number between 1 and n.
 
+for that reason it is redundant to check even numbers, because the first operation is to divide by two.
 
 # Run time
 it takes around 5 minutes to complete 20 Billion numbers.
